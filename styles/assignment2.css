@@ -231,7 +231,7 @@ header {
 .main2 img {
     height: 100%;
     width: 100%;
-    
+
 }
 
 /* .row {
@@ -249,24 +249,27 @@ header {
 .row>div {
     flex: 1;
 }
-.row1{
+
+.row1 {
     height: 400px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin-bottom: 30px;
 }
-.row2{
+
+.row2 {
     height: 400px;
     display: grid;
-    grid-template-columns: repeat(3,25% 50% 25%);
+    grid-template-columns: repeat(3, 25% 50% 25%);
     gap: 10px;
     margin-bottom: 30px;
 }
-.row3{
+
+.row3 {
     height: 400px;
     display: grid;
-    grid-template-columns: repeat(2,40% 60%);
+    grid-template-columns: repeat(2, 40% 60%);
     gap: 10px;
 }
 
@@ -433,6 +436,45 @@ main {
 }
 
 
+/* tag related style */
+
+.tag a {
+    text-decoration: none;
+    color: #FFF;
+    
+
+    font-size: 1rem;
+
+    font-weight: 400;
+
+
+}
+
+.tag-des {
+    color: #FFF;
+    
+    font-size: 1.5rem;
+    
+    font-weight: 800;
+    
+}
+
+.tag {
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    width: 250px;
+    
+    height: 100px;
+    padding-top:30px ;
+    position: relative;
+    top: -134px;
+    left: 120px;
+    transform: rotate(-19.628deg) translateX(100px);
+    
+}
+
+
 
 
 
@@ -486,29 +528,42 @@ main {
         margin-left: 10px;
         margin-right: 10px;
     }
-    .row1{
+
+    .row1 {
         grid-template-columns: none;
         height: auto;
     }
-    .row2{
+
+    .row2 {
         grid-template-columns: none;
         height: auto;
     }
-    .row3{
+
+    .row3 {
         grid-template-columns: none;
         height: auto;
     }
-    
+
 
 }
 
 
 
 /* for large devices */
-@media screen  and (max-width: 992px){
-    .main1{
+@media screen and (max-width: 992px) {
+    .main1 {
         flex-direction: column;
 
     }
-    
+    .main4{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .tag{
+        width: 50%;
+        left: 90px;
+        top: -190px;
+        transform: translateX(60px) rotate(-19.628deg);
+    }
+
 }
