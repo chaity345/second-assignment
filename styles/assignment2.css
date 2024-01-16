@@ -52,7 +52,7 @@ header {
     background-size: cover;
     border-radius: 1rem;
     border: 1px solid white;
-   /*  border: 2px solid tomato; */
+    /*  border: 2px solid tomato; */
 
 
 
@@ -367,12 +367,12 @@ header {
 .main3-des {
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
-    
+
     font-size: 1rem;
-    
+
     font-weight: 400;
-    
-    
+
+
 }
 
 .main3-content3-des {
@@ -599,6 +599,24 @@ header {
 
 }
 
+.footer1 {
+    color: #FF5400;
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+}
+
+.footer2 {
+    color:  #131318;
+    
+    font-size: 2rem;
+   
+    font-weight: 800;
+    
+}
+
 
 
 
@@ -668,14 +686,16 @@ header {
         grid-template-columns: none;
         height: auto;
     }
-    .main3-content{
+
+    .main3-content {
         flex-direction: column;
         padding-left: 30px;
     }
-    .main3-content3{
+
+    .main3-content3 {
         margin-left: 30px;
-        
-        
+
+
     }
 
     .main4 {
@@ -739,12 +759,14 @@ header {
         top: -190px;
         transform: translateX(60px) rotate(-19.628deg);
     }
-    .main3-content{
+
+    .main3-content {
         gap: 10px;
         padding-left: 10px;
         padding-right: 10px;
     }
-    .main3-content3{
+
+    .main3-content3 {
         margin-left: 50px;
         padding-left: 10px;
     }
