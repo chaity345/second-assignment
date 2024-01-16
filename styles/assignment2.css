@@ -41,9 +41,11 @@ header {
 
 /* header related style */
 .head {
-    background: linear-gradient(30deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    background-color: rgba(19, 19, 24, 0.70);
 
     background-image: url("/Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-blend-mode: multiply;
+
     /* background image size */
     background-repeat: no-repeat;
     /* for cover full height */
@@ -211,18 +213,227 @@ header {
     background: #FF5400;
     color: #FFF;
     text-align: center;
-    
+
     font-size: 1.250rem;
-    
+
     font-weight: 800;
     border: 0;
     cursor: pointer;
     padding: 13px 34px 13px 34px;
+
+}
+
+.main1-image {
+    height: 100%;
+}
+
+/* main part2 related style */
+.main2 img {
+    height: 100%;
+    width: 100%;
     
 }
-.main1-image{
-    height: 100%;
-} 
+
+/* .row {
+    height: 400px;
+   
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    
+
+
+}
+ */
+.row>div {
+    flex: 1;
+}
+.row1{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.row2{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3,25% 50% 25%);
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.row3{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2,40% 60%);
+    gap: 10px;
+}
+
+.main2-title {
+    color: #131318;
+    text-align: center;
+
+    font-size: 2.50rem;
+
+    font-weight: 800;
+
+
+}
+
+.main2-des {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+
+
+}
+
+main {
+    border: 2px solid purple;
+}
+
+
+
+
+/* main part 3 related style */
+.main3-content1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    width: 500px;
+    height: 300px;
+}
+
+.main3-content2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    width: 500px;
+    height: 300px;
+}
+
+.main3-content3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    width: 500px;
+    height: 300px;
+}
+
+.main3-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+
+}
+
+.main3-content3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.main3-title {
+    color: #131318;
+    text-align: center;
+
+    font-size: 2.50rem;
+
+    font-weight: 800;
+
+}
+
+.main3-des {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+
+    font-size: 1rem;
+
+    font-weight: 400;
+    width: 90px;
+
+
+
+}
+
+/* main part 4 related style */
+.main4-content1 {
+    background: #FFF;
+    width: 500px;
+    height: 300px;
+    border-radius: 1rem;
+    border: 1px solid #FF5400;
+}
+
+.main4-content2 img {
+    height: 300px;
+    width: 100%;
+
+}
+
+
+.main4-content1 input {
+    display: block;
+    width: 80%;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 16px 0 16px 20px;
+    border: 0;
+}
+
+.btn {
+    width: 85%;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 16px 0 16px 20px;
+    background: #FF5400;
+    cursor: pointer;
+    border: 0;
+}
+
+
+.main4 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.main4-title {
+    color: #131318;
+
+    font-size: 1.5rem;
+
+    font-weight: 800;
+    padding-top: 10px;
+    padding-left: 40px;
+
+}
+
+.main4-des {
+    color: #5A5A5D;
+
+    font-size: 1rem;
+
+    font-weight: 400;
+    width: 90%;
+    padding-left: 40px;
+
+}
+
+
+
 
 
 
@@ -261,15 +472,43 @@ header {
         padding: 0;
 
     }
+
     /* responsive main section */
-    .main1{
+    .main1 {
         display: block;
     }
-    .main1-btn{
+
+    .main1-btn {
         margin-bottom: 20px;
     }
-    .main1-image{
-    margin-left: 10px;
-    margin-right: 10px;
+
+    .main1-image {
+        margin-left: 10px;
+        margin-right: 10px;
     }
+    .row1{
+        grid-template-columns: none;
+        height: auto;
+    }
+    .row2{
+        grid-template-columns: none;
+        height: auto;
+    }
+    .row3{
+        grid-template-columns: none;
+        height: auto;
+    }
+    
+
+}
+
+
+
+/* for large devices */
+@media screen  and (max-width: 992px){
+    .main1{
+        flex-direction: column;
+
+    }
+    
 }
