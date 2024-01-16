@@ -1,0 +1,178 @@
+/* common shared option */
+/* font style */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Merriweather:wght@400;700&family=Mulish:wght@300;400;600;700;800&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* apply for css */
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+body{
+    max-width: 100%;
+}
+
+main,
+header {
+    margin: 50px 20px 0 20px;
+    
+    
+}
+
+/* header {
+    max-width: 1170px;
+
+
+
+} */
+
+
+
+/* header related style */
+.head {
+    background: linear-gradient(30deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+
+    background-image: url("/Images/Group\ 13\ \(1\)\ \(1\).png");
+    /* background image size */
+    background-repeat: no-repeat;
+    /* for cover full height */
+    /* background-size: cover; */
+    border-radius: 1rem;
+    border: 1px solid white;
+
+
+
+
+
+}
+
+.banner-container1-tittle {
+    color: #FFF;
+
+    font-size: 4rem;
+
+    font-weight: 800;
+    padding: 50px 150px 0 150px;
+    text-align: center;
+
+}
+
+.banner-container1-des {
+    color: #FFF;
+
+
+    font-size: 1rem;
+
+    font-weight: 400;
+    padding: 0 230px 0 230px;
+
+    margin-bottom: 30px;
+
+}
+
+/* start input-field */
+
+.input-field {
+
+    /* style for box background */
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+
+    /* for centralize the background of input field*/
+    margin: 0 150px 106px 180px;
+    border: 2px solid black;
+    /* for responsive use fixed width */
+    width:70%;
+
+
+
+}
+
+.box {
+    /* style for full box item and layout */
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    gap: 24px;
+    /* padding-bottom: 90px;
+    padding-left: 185px;
+    padding-right: 185px;
+     */
+     padding: 16px 0 16px 0; 
+    /* grid-template-rows: span 3; */
+    /* grid-column: span 1;
+ */
+}
+
+.box input {
+    /* style for input border */
+    border-radius: 8px;
+    background: #FFF;
+    border: 0;
+}
+
+
+
+
+
+
+
+/* style for input  */
+.input-text {
+    /* for inside text of input item (placeholder)*/
+
+    text-align: center;
+    padding: 16px 5px 16px 10px;
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+
+    font-size: 1rem;
+
+    font-weight: 400;
+
+
+}
+
+#btn-primary {
+    border-radius: 8px;
+    background: #FF5400;
+    cursor: pointer;
+}
+
+/* main related style */
+
+@media screen and (max-width: 600px){
+    .banner-container1-tittle{
+        font-size: 2rem;
+        padding: 0;
+    }
+    .banner-container1-des{
+
+        padding: 0;
+         width: 100%; 
+        text-align: center;
+    }
+    .box{
+        grid-template-columns: none;
+    }
+    .input-field{
+        margin: 0 0 0 20px;
+        /* text-align: center; */
+        width: 90%;
+        border: 0;
+        
+    }
+    .head{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+  
+}
+}
