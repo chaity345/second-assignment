@@ -427,6 +427,7 @@ header {
 
 }
 
+
 /* main part 4 related style */
 .main4-content1 {
     background: #FFF;
@@ -494,6 +495,18 @@ header {
     padding-left: 40px;
 
 }
+hr{
+    margin-left: 40px;
+    margin-right: 40px;
+    background: rgba(19, 19, 24, 0.10);
+}
+ /* .select{
+    position: relative;
+
+    left: 160px;
+    top: -40px;
+    border: 0;
+ } */
 
 
 /* tag related style */
